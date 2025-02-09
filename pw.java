@@ -1,16 +1,16 @@
 
 public class BinarySearch {
- public static int binarySeaarch(int numbers[],int key) {
+ public static int binarySeaarch(int num[],int key) {
 	 int start=0;
-	 int end=numbers.length-1;
+	 int end=num.length-1;
 	 
 	 while(start<=end) {
 		 int mid=start+end;
 		 
-		 if(numbers[mid]==key) {
+		 if(num[mid]==key) {
 			return mid; 
 		 }
-		 if(numbers[mid]<key) {
+		 if(num[mid]<key) {
 			 start= mid+1;
 		 }else {
 			end=mid-1; 
@@ -21,7 +21,7 @@ public class BinarySearch {
  }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      int numbers[]= {2,3,5,7,8,10,12,14};
+      int num[]= {2,1,5,7,8,10,12,};
       int key=12;
       System.out.println("index for key is:"+binarySeaarch(numbers,key));
 	}
